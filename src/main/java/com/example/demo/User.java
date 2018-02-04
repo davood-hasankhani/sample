@@ -26,7 +26,7 @@ public class User implements Serializable {
 	private String userName;
 	private String password;
 	
-	@OneToOne(fetch = FetchType.LAZY , mappedBy = "user" ,orphanRemoval=true) // orphanRemoval=true solved Cascade delete issue
+	@OneToOne(fetch = FetchType.LAZY , mappedBy = "user" ,cascade = CascadeType.ALL,orphanRemoval=true) // orphanRemoval=true solved Cascade delete issue
 	@JsonManagedReference // Solved Json recursion issue
 	private Profile profile;	
 	
