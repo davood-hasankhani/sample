@@ -55,7 +55,10 @@
 		    <artifactId>spring-orm</artifactId>
 		    <version>3.2.5.RELEASE</version>
 		</dependency>
-		
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-security</artifactId>
+		</dependency>		
 		
 	</dependencies>
 
